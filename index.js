@@ -8,7 +8,7 @@ function createBot() {
   const bot = mineflayer.createBot({
     host: "pashasmp.mcsh.io",
     port: 25565,
-    username: afkbot,
+    username: "afkbot",
     version: "1.21.11",
     auth: "offline"
   });
