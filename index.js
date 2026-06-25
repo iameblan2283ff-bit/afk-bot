@@ -17,7 +17,7 @@ function createBot() {
     console.log('✅ Бот зашёл на сервер!');
 
     setTimeout(() => {
-      bot.chat('/login ' + 09032010az);   // ← Изменили на простой способ
+      bot.chat('/login ' + 09032010az);
       console.log('Отправлена команда /login');
     }, 3000);
   });
