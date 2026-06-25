@@ -17,7 +17,7 @@ function createBot() {
     console.log('✅ Бот зашёл на сервер!');
 
     setTimeout(() => {
-      bot.chat('/login ' + String(pashoks));   // ← Исправлено
+      bot.chat('/login ' + String("pashoks));   // ← Исправлено
       console.log('Отправлена команда /login');
     }, 3000);
   });
