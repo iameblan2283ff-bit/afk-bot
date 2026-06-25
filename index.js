@@ -6,7 +6,7 @@ const password = process.env.PASSWORD;
 
 function createBot() {
   const bot = mineflayer.createBot({
-    host: pashasmp.mcsh.io,
+    host: "pashasmp.mcsh.io",
     port: 25565,
     username: afkbot,
     version: "1.21.11",
