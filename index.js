@@ -1,16 +1,12 @@
 const mineflayer = require('mineflayer');
 
-const host = process.env.HOST;
-const username = process.env.USERNAME || process.env.BOT_USERNAME;
-const password = process.env.PASSWORD;
-
 function createBot() {
-  console.log('Попытка подключения к серверу:', host);
+  console.log('Запуск бота...');
 
   const bot = mineflayer.createBot({
-    host: pashasmp.mcsh.io,                    // ← здесь должно быть правильно
+    host: "pashasmp.mcsh.io",   // твой айпи
     port: 25565,
-    username: afkbot,
+    username: "afkbot",         // ник бота
     version: "1.21.1",
     auth: "offline"
   });
@@ -18,9 +14,10 @@ function createBot() {
   bot.on('spawn', () => {
     console.log('✅ Бот успешно зашёл на сервер!');
 
+    // Авто логин
     setTimeout(() => {
-      bot.chat('/login ' + pashoks);
-      console.log('✅ /login отправлен');
+      bot.chat('/login pashoks');
+      console.log('✅ Команда /login отправлена');
     }, 3000);
   });
 
