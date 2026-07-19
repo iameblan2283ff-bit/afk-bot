@@ -16,7 +16,7 @@ function createBot() {
 
     // Авто логин
     setTimeout(() => {
-      bot.chat('/login "pashoks');
+      bot.chat('/login = pashoks');
       console.log('✅ Команда /login отправлена');
     }, 3000);
   });
