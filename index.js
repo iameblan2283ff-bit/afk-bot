@@ -1,12 +1,12 @@
 const mineflayer = require('mineflayer');
 
 function createBot() {
-  console.log('Запуск бота...');
+  console.log('Запуск AFK бота...');
 
   const bot = mineflayer.createBot({
-    host: "pashasmp.mcsh.io",   // твой айпи
+    host: "pashasmp.mcsh.io",
     port: 25565,
-    username: "afkbot",         // ник бота
+    username: "afkbot",
     version: "1.21.1",
     auth: "offline"
   });
@@ -14,10 +14,10 @@ function createBot() {
   bot.on('spawn', () => {
     console.log('✅ Бот успешно зашёл на сервер!');
 
-    // Авто логин
+    // Авто /login
     setTimeout(() => {
-      bot.chat('/login = pashoks');
-      console.log('✅ Команда /login отправлена');
+      bot.chat('/login pashoks');
+      console.log('✅ /login отправлен');
     }, 3000);
   });
 
